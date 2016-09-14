@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.syl.activitylifecycle.MainActivity">
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" android:onClick="qq"
+        android:text="轻拳"/>
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/btn1" android:onClick="zq"
+        android:text="重拳"/>
+    <Button
+        android:id="@+id/btn3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/btn2" android:onClick="zj"
+        android:text="重脚"/>
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/iv_player"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="120dp" android:scaleType="fitXY"
+            android:src="@mipmap/mr"/>
+        <ImageView
+            android:id="@+id/iv_boss"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/iv_player" android:scaleType="fitXY"
+            android:src="@mipmap/boss"/>
+        <!--相对布局先指定是相对于那个view,然后在指定layout_marginLeft,layout_marginBottom,等等-->
+        <ProgressBar
+            android:id="@+id/pb_hb"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="100dp"
+            android:layout_height="10dp"
+            android:layout_above="@+id/iv_boss"
+            android:layout_alignLeft="@+id/iv_boss" android:layout_alignStart="@+id/iv_boss"
+            android:layout_marginBottom="25dp" android:layout_marginLeft="20dp"
+            />
+    </RelativeLayout>
+</LinearLayout>
