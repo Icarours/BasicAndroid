@@ -11,7 +11,14 @@ import android.widget.EditText;
 
 import com.syl.mmsassistant.activity.ContactsActivity;
 import com.syl.mmsassistant.activity.TemplateActivity;
-
+/**
+ * author   j3767
+ * date     2016/9/14 8:49
+ * desc
+ * 短信助手
+ * 1.选择手机号
+ * 2.选择短信模板
+ */
 public class MainActivity extends AppCompatActivity {
 
     private EditText mEtNumber;
@@ -43,6 +50,12 @@ public class MainActivity extends AppCompatActivity {
         super.onDestroy();
     }
 
+    /**
+     * 处理从返回的Activity带回的数据
+     * @param requestCode
+     * @param resultCode
+     * @param data
+     */
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         switch (requestCode) {

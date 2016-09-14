@@ -14,6 +14,7 @@ import com.syl.mmsassistant.MainActivity;
 import com.syl.mmsassistant.R;
 
 public class ContactsActivity extends AppCompatActivity {
+    //创建数据
     private String[] contacts = {"13363028315", "15989556322", "13210354566", "15989469069"};
 
     @Override
@@ -22,6 +23,7 @@ public class ContactsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_contacts);
 
         ListView lvContacts = (ListView) findViewById(R.id.contacts_lv_contacts);
+        //使用ArrayAdapterGoogle封装好的适配器。数组或者集合专用
         lvContacts.setAdapter(new ArrayAdapter<>(this, R.layout.contacts_lv_item, contacts));
         lvContacts.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -37,6 +39,9 @@ public class ContactsActivity extends AppCompatActivity {
         });
     }
 
+    /**
+     * 创建适配器
+     */
     class MyAdapter extends BaseAdapter {
 
         @Override

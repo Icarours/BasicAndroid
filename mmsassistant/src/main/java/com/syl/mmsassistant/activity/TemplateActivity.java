@@ -35,12 +35,15 @@ public class TemplateActivity extends AppCompatActivity {
                 String template = mList.get(position);
                 Intent data = new Intent(TemplateActivity.this, MainActivity.class);
                 data.putExtra("template",template);
-                setResult(0,data);
-                finish();
+                setResult(0,data);//将要传递数据的数据带回启动当前Activity的原Activity
+                finish();//关闭当前的Activity，回到启动他的Activity
             }
         });
     }
 
+    /**
+     * 初始化数据
+     */
     private void initData() {
         mList = new ArrayList<>();
         mList.add("茫茫人海中，相识了你，是一种缘份，只希望用我的真诚，换取你的真情。");
