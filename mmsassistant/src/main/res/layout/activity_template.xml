@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.syl.mmsassistant.activity.ContactsActivity">
+    <TextView android:id="@+id/templates_tvTemplatesList"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="#2edac9"
+              android:gravity="center"
+              android:text="模板列表"
+              android:textSize="25sp"/>
+    <ListView android:id="@+id/templates_lv_templates"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_below="@id/templates_tvTemplatesList">
+    </ListView>
+</RelativeLayout>

@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">NewsApp</string>
+    <string name="urlPath">http://192.168.2.205:8080/img/news.xml</string>
+</resources>

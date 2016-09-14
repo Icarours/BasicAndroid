@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.syl.weatherforecast.MainActivity">
+
+    <EditText android:id="@+id/et_city"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="上海"/>
+    <Button android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="search"
+            android:text="search"/>
+
+    <!--ScrollView只能有一个孩子-->
+    <ScrollView android:layout_width="match_parent"
+                android:layout_height="match_parent">
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv1"
+                style="@style/myTheme"
+                android:background="#4255e9"/>
+            <TextView
+                android:id="@+id/tv2"
+                style="@style/myTheme"
+                android:background="#dea448"/>
+            <TextView
+                android:id="@+id/tv3"
+                style="@style/myTheme"
+                android:background="#2c8295"/>
+            <TextView
+                android:id="@+id/tv4"
+                style="@style/myTheme"
+                android:background="#a15a5a"/>
+            <TextView
+                android:id="@+id/tv5"
+                style="@style/myTheme"
+                android:background="#8adad2"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

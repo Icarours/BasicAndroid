@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.syl.mmsassistant.MainActivity">
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+        <EditText android:id="@+id/et_number"
+                  android:layout_marginTop="12dp"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:gravity="bottom"
+                  android:text="15532685987"/>
+        <Button android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_selectContact"
+                android:layout_alignParentRight="true"
+                android:onClick="selectContact"
+                android:text="+"/>
+    </RelativeLayout>
+    <EditText
+        android:id="@+id/et_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="8"
+        android:text="Hello World!"/>
+    <Button android:id="@+id/btn_selectModule"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="selectModule"
+            android:text="选择模板"/>
+    <Button android:id="@+id/btn_send"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="send"
+            android:text="发送"/>
+</LinearLayout>

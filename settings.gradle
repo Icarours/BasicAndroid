@@ -1,0 +1,1 @@
+include ':app', ':loginqq_sd', ':loadimage', ':dialogdemo', ':phoneluck', ':demo1', ':weatherforecast', ':newsapp', ':qqloginget', ':multithreaddownload', ':renpingjs', ':netnovel', ':viewpagerfragment', ':intentdemo1', ':mmsassistant'
