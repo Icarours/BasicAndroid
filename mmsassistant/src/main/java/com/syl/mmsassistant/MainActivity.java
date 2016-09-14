@@ -1,6 +1,8 @@
 package com.syl.mmsassistant;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.telephony.SmsManager;
@@ -14,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
 
     private EditText mEtNumber;
     private EditText mEtContent;
+    private SharedPreferences mSp;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +25,22 @@ public class MainActivity extends AppCompatActivity {
 
         mEtNumber = (EditText) findViewById(R.id.et_number);
         mEtContent = (EditText) findViewById(R.id.et_content);
+
+        //回显
+        mSp = getSharedPreferences("sms",Context.MODE_PRIVATE);
+        mEtNumber.setText(mSp.getString("mEtNumber",""));
+        mEtContent.setText(mSp.getString("mEtContent",""));
+    }
+
+    @Override
+    protected void onDestroy() {
+        //使用SharedPreferences保存数据
+        mSp = getSharedPreferences("sms", Context.MODE_PRIVATE);
+        SharedPreferences.Editor edit = mSp.edit();
+        edit.putString("mEtNumber",mEtNumber.getText().toString());
+        edit.putString("mEtContent",mEtContent.getText().toString());
+        edit.apply();
+        super.onDestroy();
     }
 
     @Override
