@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.syl.broadcastreceiver">
+
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <receiver android:name=".receiver.OutGoingCall">
+            <intent-filter>
+                <action android:name="android.intent.action.NEW_OUTGOING_CALL"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".receiver.MyReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.NEW_OUTGOING_CALL"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".receiver.DataCollections"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".receiver.MyReceiver1">
+            <intent-filter>
+                <action android:name="com.syl.XWLB"/>
+            </intent-filter>
+        </receiver>
+        <!--广播的优先权范围是-1000到1000-->
+        <receiver android:name=".receiver.ShengRecevier">
+            <intent-filter android:priority="1000">
+                <action android:name="com.syl.SENDRICE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".receiver.ShiRecevier">
+            <intent-filter android:priority="500">
+                <action android:name="com.syl.SENDRICE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".receiver.XianRecevier">
+            <intent-filter android:priority="0">
+                <action android:name="com.syl.SENDRICE"/>
+            </intent-filter>
+        </receiver><receiver android:name=".receiver.NongRecevier">
+            <intent-filter android:priority="-1000">
+                <action android:name="com.syl.SENDRICE"/>
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

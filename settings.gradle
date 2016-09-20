@@ -1,1 +1,1 @@
-include ':app', ':loginqq_sd', ':loadimage', ':dialogdemo', ':phoneluck', ':weatherforecast', ':newsapp', ':qqloginget', ':multithreaddownload', ':renpingjs', ':netnovel', ':viewpagerfragment', ':intentdemo1', ':mmsassistant', ':activitylifecycle'
+include ':app', ':loginqq_sd', ':loadimage', ':dialogdemo', ':phoneluck', ':weatherforecast', ':newsapp', ':qqloginget', ':multithreaddownload', ':renpingjs', ':netnovel', ':viewpagerfragment', ':intentdemo1', ':mmsassistant', ':activitylifecycle', ':broadcastreceiver',':broadcast1'
