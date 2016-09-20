@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //通过代码注册广播
+        //通过代码注册广播,代码中注册广播,起作用仅限于该demo.在清单文件中注册广播,广播一直都在起作用.监听频繁操作的广播应该在代码中注册
         IntentFilter filter = new IntentFilter();
         filter.addAction(Intent.ACTION_SCREEN_ON);
         filter.addAction(Intent.ACTION_SCREEN_OFF);
