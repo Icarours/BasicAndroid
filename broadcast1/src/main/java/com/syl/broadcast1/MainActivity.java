@@ -1,10 +1,14 @@
 package com.syl.broadcast1;
 
 import android.content.Intent;
+import android.content.IntentFilter;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+
+import com.syl.broadcast1.recevier.LockScreenRecevier;
+
 /**
  * author   j3767
  * date     2016/9/20 11:07
@@ -13,10 +17,28 @@ import android.view.View;
  */
 public class MainActivity extends AppCompatActivity {
 
+    private LockScreenRecevier mRecevier;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        //通过代码注册广播
+        IntentFilter filter = new IntentFilter();
+        filter.addAction(Intent.ACTION_SCREEN_ON);
+        filter.addAction(Intent.ACTION_SCREEN_OFF);
+
+        mRecevier = new LockScreenRecevier();
+        registerReceiver(mRecevier,filter);
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        //解除注册广播接收者
+        unregisterReceiver(mRecevier);
+        mRecevier=null;
     }
 
     /**
