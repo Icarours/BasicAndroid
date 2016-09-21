@@ -13,7 +13,7 @@ import com.syl.broadcast1.recevier.LockScreenRecevier;
  * author   j3767
  * date     2016/9/20 11:07
  * desc
- * 发送无序广播
+ * 发送广播
  */
 public class MainActivity extends AppCompatActivity {
 
@@ -62,6 +62,7 @@ public class MainActivity extends AppCompatActivity {
         intent.setAction("com.syl.SENDRICE");
         String data = "过年发福利,每人发10斤大米";
         System.out.println(data);
+        //发送有序广播
         sendOrderedBroadcast(intent,null,new FinalRecevier(),null,0,data,null);
     }
 }
