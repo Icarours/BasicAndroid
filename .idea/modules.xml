@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/BasicAndroid.iml" filepath="$PROJECT_DIR$/BasicAndroid.iml" />
+      <module fileurl="file://$PROJECT_DIR$/activitylifecycle/activitylifecycle.iml" filepath="$PROJECT_DIR$/activitylifecycle/activitylifecycle.iml" />
+      <module fileurl="file://$PROJECT_DIR$/alipay/alipay.iml" filepath="$PROJECT_DIR$/alipay/alipay.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/broadcast1/broadcast1.iml" filepath="$PROJECT_DIR$/broadcast1/broadcast1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/broadcastreceiver/broadcastreceiver.iml" filepath="$PROJECT_DIR$/broadcastreceiver/broadcastreceiver.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dialogdemo/dialogdemo.iml" filepath="$PROJECT_DIR$/dialogdemo/dialogdemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/intentdemo1/intentdemo1.iml" filepath="$PROJECT_DIR$/intentdemo1/intentdemo1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/loadimage/loadimage.iml" filepath="$PROJECT_DIR$/loadimage/loadimage.iml" />
+      <module fileurl="file://$PROJECT_DIR$/loginqq_sd/loginqq_sd.iml" filepath="$PROJECT_DIR$/loginqq_sd/loginqq_sd.iml" />
+      <module fileurl="file://$PROJECT_DIR$/meituan/meituan.iml" filepath="$PROJECT_DIR$/meituan/meituan.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mmsassistant/mmsassistant.iml" filepath="$PROJECT_DIR$/mmsassistant/mmsassistant.iml" />
+      <module fileurl="file://$PROJECT_DIR$/multithreaddownload/multithreaddownload.iml" filepath="$PROJECT_DIR$/multithreaddownload/multithreaddownload.iml" />
+      <module fileurl="file://$PROJECT_DIR$/netnovel/netnovel.iml" filepath="$PROJECT_DIR$/netnovel/netnovel.iml" />
+      <module fileurl="file://$PROJECT_DIR$/newsapp/newsapp.iml" filepath="$PROJECT_DIR$/newsapp/newsapp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/phoneluck/phoneluck.iml" filepath="$PROJECT_DIR$/phoneluck/phoneluck.iml" />
+      <module fileurl="file://$PROJECT_DIR$/qqloginget/qqloginget.iml" filepath="$PROJECT_DIR$/qqloginget/qqloginget.iml" />
+      <module fileurl="file://$PROJECT_DIR$/renpingjs/renpingjs.iml" filepath="$PROJECT_DIR$/renpingjs/renpingjs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/servicedemo/servicedemo.iml" filepath="$PROJECT_DIR$/servicedemo/servicedemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/servicedemo2/servicedemo2.iml" filepath="$PROJECT_DIR$/servicedemo2/servicedemo2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/servicedemo3/servicedemo3.iml" filepath="$PROJECT_DIR$/servicedemo3/servicedemo3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/servicelifecycle/servicelifecycle.iml" filepath="$PROJECT_DIR$/servicelifecycle/servicelifecycle.iml" />
+      <module fileurl="file://$PROJECT_DIR$/viewpagerfragment/viewpagerfragment.iml" filepath="$PROJECT_DIR$/viewpagerfragment/viewpagerfragment.iml" />
+      <module fileurl="file://$PROJECT_DIR$/weatherforecast/weatherforecast.iml" filepath="$PROJECT_DIR$/weatherforecast/weatherforecast.iml" />
+    </modules>
+  </component>
+</project>

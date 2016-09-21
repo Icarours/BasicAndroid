@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/activitylifecycle" />
+            <option value="$PROJECT_DIR$/alipay" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/broadcast1" />
+            <option value="$PROJECT_DIR$/broadcastreceiver" />
+            <option value="$PROJECT_DIR$/dialogdemo" />
+            <option value="$PROJECT_DIR$/intentdemo1" />
+            <option value="$PROJECT_DIR$/loadimage" />
+            <option value="$PROJECT_DIR$/loginqq_sd" />
+            <option value="$PROJECT_DIR$/meituan" />
+            <option value="$PROJECT_DIR$/mmsassistant" />
+            <option value="$PROJECT_DIR$/multithreaddownload" />
+            <option value="$PROJECT_DIR$/netnovel" />
+            <option value="$PROJECT_DIR$/newsapp" />
+            <option value="$PROJECT_DIR$/phoneluck" />
+            <option value="$PROJECT_DIR$/qqloginget" />
+            <option value="$PROJECT_DIR$/renpingjs" />
+            <option value="$PROJECT_DIR$/servicedemo" />
+            <option value="$PROJECT_DIR$/servicedemo2" />
+            <option value="$PROJECT_DIR$/servicedemo3" />
+            <option value="$PROJECT_DIR$/servicelifecycle" />
+            <option value="$PROJECT_DIR$/viewpagerfragment" />
+            <option value="$PROJECT_DIR$/weatherforecast" />
+          </set>
+        </option>
+        <option name="myModules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/activitylifecycle" />
+            <option value="$PROJECT_DIR$/alipay" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/broadcast1" />
+            <option value="$PROJECT_DIR$/broadcastreceiver" />
+            <option value="$PROJECT_DIR$/dialogdemo" />
+            <option value="$PROJECT_DIR$/intentdemo1" />
+            <option value="$PROJECT_DIR$/loadimage" />
+            <option value="$PROJECT_DIR$/loginqq_sd" />
+            <option value="$PROJECT_DIR$/meituan" />
+            <option value="$PROJECT_DIR$/mmsassistant" />
+            <option value="$PROJECT_DIR$/multithreaddownload" />
+            <option value="$PROJECT_DIR$/netnovel" />
+            <option value="$PROJECT_DIR$/newsapp" />
+            <option value="$PROJECT_DIR$/phoneluck" />
+            <option value="$PROJECT_DIR$/qqloginget" />
+            <option value="$PROJECT_DIR$/renpingjs" />
+            <option value="$PROJECT_DIR$/servicedemo" />
+            <option value="$PROJECT_DIR$/servicedemo2" />
+            <option value="$PROJECT_DIR$/servicedemo3" />
+            <option value="$PROJECT_DIR$/servicelifecycle" />
+            <option value="$PROJECT_DIR$/viewpagerfragment" />
+            <option value="$PROJECT_DIR$/weatherforecast" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>
